@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main ()
+{
+    char coffee;
+    char yesno;
+    printf("Types of coffee: ");
+    printf("\n Number 1 :Egg");
+    printf("\n Number 2 :Black");
+    printf("\n Number 3 :Capucino ");
+    
+    do
+    {
+        printf("\nType of coffee:");
+        scanf("%c",&coffee);
+        switch(coffee)
+        {
+            case '1':printf("\nOk anything else?");
+            break;
+            case '2':printf("\nOk anything else?");
+            break;
+            case '3':printf("\nOk anything else?");
+            break;
+            
+        }
+        getchar();
+        printf("\ny/n: ");  
+        scanf("%c",&yesno);
+    }while(yesno == 'y');
+    printf("\nDone");
+    
+    
+
+	return 0;
+}
