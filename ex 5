@@ -1,0 +1,48 @@
+#include <stdio.h> 
+main() 
+{   
+    int acc;
+    int pass;
+    char yesno;
+    int moneyinb =69420;
+    int takeout;
+    int choose;
+    printf("Account number: ");
+    scanf("%d",&acc);
+    printf("\nPassword: ");
+    scanf("%d",&pass);
+    if (acc == 420 && pass == 69);
+    {
+        printf("\nAccess granted");
+        do {
+        printf("\n1.For take out money");
+        printf("\n2.For checking money");
+        printf("\nChoose a number: ");
+        scanf("%d",&choose);
+            switch(choose)
+            {
+            case 1: printf("\nEnter the amount of money: ");
+            scanf("%d",&takeout);
+            if (takeout <= moneyinb){
+            moneyinb -= takeout;
+            printf("\nMoney take out: %d",takeout);
+            printf("\nMoney left: %d",moneyinb);
+            }
+            else
+            printf("\nCan't do it bro");
+            break;
+            case 2: printf("\nMoney in the bank: %d",moneyinb);
+            break;
+            }
+            getchar();
+            printf("\nContinue y/n: ");
+            scanf("%c",&yesno);
+            
+        }
+        while(yesno != 'n');
+    printf("CY@");
+    }
+    
+    
+    
+}
