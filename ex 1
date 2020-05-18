@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int ASM;
+    int written;
+    int practice;
+    printf("\nASM: ");
+    scanf("%d",&ASM);
+    printf("\nWritten: ");
+    scanf("%d",&written);
+    printf("\nPractice: ");
+    scanf("%d",&practice);
+    {
+        if(ASM>=4 && ASM<=10)
+        printf("\nU pass asm");
+        else if (ASM>10)
+        printf("Invalid for asm");
+        else
+        printf("\nU fail asm");
+    }
+    {
+        if(written>=40 && written<=100)
+        printf("\nU pass written");
+        else if (written>100)
+        printf("\nInvalid for written");
+        else
+        printf("\nU fail written");
+    }
+    {
+        if (practice>=6 && practice<=15)
+        printf("\nU pass practice");
+        else if (practice>15)
+        printf("\nInvalid for practice");
+        else
+        printf("\nU fail practice");
+    }
+
+    return 0;
+}
